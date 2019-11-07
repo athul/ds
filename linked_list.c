@@ -19,6 +19,7 @@ int main()
     int choice;
     while (1)
     {
+        printf("\n-------------------------------------");
         printf("\n1.create \n2.display \n3.insert at begin \n4.insert at end \n5.insert at position\n6.delete at begin \n7.delete at end \n8.delete at position\n9.Exit\n");
         printf("enter the choice:");
         scanf("%d", &choice);
@@ -97,7 +98,7 @@ int display()
         printf("the list elements are:");
         while (ptr != NULL)
         {
-            printf("%d", ptr->info);
+            printf("%d\t", ptr->info);
             ptr = ptr->next;
         }
     }
